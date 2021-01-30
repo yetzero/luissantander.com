@@ -3,18 +3,28 @@
     <div class="w-full p-40 bg-gray-900 text-white text-center">
       <h1 class="text-6xl">Welcome, mate!</h1>
     </div>
-    <div class="w-full max-w-7xl mx-auto text-xl p-12 text-center">
-      <p>
+    <div
+      class="w-full max-w-7xl mx-auto text-3xl text-gray-900 p-12 mt-10 mb-20 text-center"
+    >
+      <p class="mb-10">
         I'm Luis Santander, a developer and artist from Santiago, Chile. I work
-        on web development, 3D and realtime engines. Often I mixed them.
+        on web development, 3D and realtime engines. Often I mix them.
       </p>
-      <p>
+      <p class="mb-10">
         Take a look at my web projects or my
-        <a href="https://www.luissantanderart.com">art portfolio</a>.
+        <a
+          class="text-red-500 hover:underline"
+          href="https://www.luissantanderart.com"
+          >art portfolio</a
+        >.
       </p>
       <p>
         If you need a project done, let's
-        <a href="mailto:hello@luissantanderart.com">get in touch</a>!
+        <a
+          class="text-red-500 hover:underline"
+          href="mailto:hello@luissantanderart.com"
+          >get in touch</a
+        >!
       </p>
     </div>
   </Layout>
