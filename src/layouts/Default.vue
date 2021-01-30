@@ -57,4 +57,8 @@ query {
 }
 </static-query>
 
-<style></style>
+<style>
+body {
+  margin: 0;
+}
+</style>
