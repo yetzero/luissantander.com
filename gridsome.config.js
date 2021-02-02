@@ -14,7 +14,21 @@ if (process.env.NODE_ENV === "production")
 
 module.exports = {
   siteName: "LuisSantander.com",
-  plugins: [],
+  plugins: [
+    {
+      use: "gridsome-source-sanity",
+      options: {
+        projectId: "if013gnk",
+        dataset: "production",
+        overlayDrafts: false,
+        watchmode: false,
+        graphqlTag: "default",
+      },
+    },
+  ],
+  templates: {
+    SanityProject: "/projects/:slug",
+  },
   css: {
     loaderOptions: {
       postcss: {
