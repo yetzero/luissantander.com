@@ -15,11 +15,8 @@
           </div>
         </div>
         <nav class="nav">
-          <g-link
-            class="px-2 uppercase hover:text-red-500"
-            to="/projects/"
-          >
-            Projects</span>
+          <g-link class="px-2 uppercase hover:text-red-500" to="/projects/">
+            Projects
           </g-link>
 
           <g-link
@@ -30,7 +27,11 @@
         </nav>
       </div>
     </header>
-    <slot />
+    <transition name="fade" appear>
+      <main>
+        <slot />
+      </main>
+    </transition>
     <footer class="bg-black text-white text-sm p-4 text-center">
       <div
         class="w-full max-w-7xl text-center mx-auto flex justify-center uppercase tracking-wider"
@@ -69,5 +70,11 @@ query {
 <style>
 body {
   margin: 0;
+}
+.fade-enter-active {
+  transition: opacity 0.5s;
+}
+.fade-enter {
+  opacity: 0;
 }
 </style>
